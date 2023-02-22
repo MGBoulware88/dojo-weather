@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- top nav -->
+    <div class="top-nav h-flex">
+        <!-- site title -->
+        <div class="site-title">
+            <h1>DojoWeather</h1>
+        </div>
+        <!-- city links -->
+        <div class="city-links h-flex">
+            <ul class="h-flex">
+                <li><a href="#" onclick="myAlert('Burbank')">Burbank</a></li>
+                <li><a href="#" onclick="myAlert('Chicago')">Chicago</a></li>
+                <li><a href="#" onclick="myAlert('Dallas')">Dallas</a></li>
+            </ul>   
+        </div>
+    </div>
+    <!-- main content -->
+    <div class="main">
+
+        <!-- main content header -->
+        <div class="header h-flex">
+            <!-- current city -->
+            <div class="current-city">
+                <h2>San Jose</h2>
+            </div>
+            <!-- unit toggle -->
+            <div class="unit-toggle h-flex">
+                <p>show temperature in</p>
+                <select name="unit" id="unit" onchange="changeTempUnit()" >
+                    <option value="C">°C</option>
+                    <option value="F">°F</option>
+                </select>
+            </div>
+        </div>
+        <!-- main weather content -->
+        <div class="weather-content h-flex">
+            <!-- 4 days to show -->
+            <div class="weather" id="Today">
+                <h3>Today</h3>
+                <img src="./static/some_rain.png" alt="some rain">
+                <p class="summary">some rain</p>
+                <div class="h-flex">
+                    <p class="high temp"><span id="today-high">24</span>°</p>
+                    <p class="low temp"><span id="today-low">18</span>°</p>
+                </div>
+            </div>
+            <div class="weather" id="Tomorrow">
+                <h3>Tomorrow</h3>
+                <img src="./static/some_sun.png" alt="some sun">
+                <p class="summary">some sun</p>
+                <div class="h-flex">
+                    <p class="high temp"><span id="tomorrow-high">27</span>°</p>
+                    <p class="low temp"><span id="tomorrow-low">19</span>°</p>
+                </div>
+            </div>
+            <div class="weather" id="Friday">
+                <h3>Friday</h3>
+                <img src="./static/some_clouds.png" alt="some clouds">
+                <p class="summary">some clouds</p>
+                <div class="h-flex">
+                    <p class="high temp"><span id="friday-high">21</span>°</p>
+                    <p class="low temp"><span id="friday-low">16</span>°</p>
+                </div>
+            </div>
+            <div class="weather" id="Saturday">
+                <h3>Saturday</h3>
+                <img src="./static/some_sun.png" alt="some sun">
+                <p class="summary">some sun</p>
+                <div class="h-flex">
+                    <p class="high temp"><span id="saturday-high">26</span>°</p>
+                    <p class="low temp"><span id="saturday-low">21</span>°</p>
+                </div>
+            </div>
+        </div>
+        <!-- cookies alert -->
+        
+    </div>
+    <div class="cookies-message">
+        <img src="./static/cookie.png" alt="cookie" class="cookie">
+        <div class="cookie-disclaimer">
+            <h4>Stop! Cookie time</h4>
+            <p>We use cookies (sadly not the edible ones) to personalize</p>
+            <p> content and ads, to provide social media features and to</p>
+            <p>analyse our traffic. <span><a href="#">Read more. . .</a></span></p>
+        </div>
+        <button type="button" class="button" onclick="hideMyParentElement(this)">
+            <!-- I probably should not use a div here, but I could not get the button to stop wrapping the text othewise -->
+            <div class="wide-button">
+                <p>I</p>
+                <p>Accept</p>
+            </div>
+        </button>
+    </div>
+        
+        
+    <script src="script.js"></script>
+</body>
+</html>

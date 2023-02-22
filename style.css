@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+/* apply globally */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Balsamiq Sans', cursive;
+}
+ul {
+    list-style: none;
+}
+button {
+    background-color: rgb(159, 197, 248);
+    padding: 5px 10px;
+    box-shadow: 2px 2px black;
+}
+.h-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+/* top nav */
+.top-nav {
+    color: white;
+    background-color: rgb(159, 197, 248);
+    padding: 10px 100px;
+}
+.city-links a{
+    color: white;
+    gap: 40px;
+    font-size: 16pt;
+    text-decoration: none;
+}
+/* main content */
+.main {
+    padding: 10px 100px;
+}
+/* main content header */
+.header {
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+}
+/* .current-city {
+    pass;
+} */
+.unit-toggle {
+    font-size: 10pt;
+    gap: 5px;
+}
+/* .unit {
+    pass;
+} */
+
+/* weather content */
+.weather-content {
+    padding: 18px 0;
+}
+/* weather blocks*/
+.weather {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+    background-color: rgb(238, 238, 238);
+    text-align: center;
+    padding: 20px;
+}
+.weather img {
+    height: 90px;
+    border-radius: 50%;
+}
+.summary {
+    font-size: 10pt;
+}
+.temp {
+    font-size: 14pt;
+    font-weight: bold;
+}
+.high {
+    color: rgb(207, 42, 39);
+}
+.low {
+    color: rgb(43, 120, 228);
+}
+/* cookies message*/
+.cookies-message {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px 100px;
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -350px;
+    width: 500px;
+    border: 2px solid black;
+    background-color: rgb(238, 238, 238);
+}
+.cookie {
+    height: 60px;
+    width: 60px;
+    align-self: center;
+}
+.button {
+    padding: 4px 14px;
+    cursor: pointer;
+    align-self: center;
+}
+.wide-button {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+}
